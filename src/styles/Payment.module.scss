@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+.container {
+    background: $bg;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: calc(30px + #{$headerHeight});
+    min-height: calc(100vh - 100px);
+    padding-bottom: 30px;
+    width: 98%;
+}

@@ -1,0 +1,131 @@
+@import "./../../styles/variables.scss";
+
+.container {
+    background: $bg;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+.container__first {
+    background: $bg;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.message {
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: $dark;
+        font-size: 2rem;
+        letter-spacing: $letterSpacing;
+        font-weight: 900;
+        position: relative;
+        margin-bottom: $spacing-xl;
+    }
+
+    @media only screen and (max-width: 576px) {
+        &__content {
+            min-width: 20rem;
+        }
+    }
+
+    &__content {
+        margin: 0 1.5rem;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card {
+        position: relative;
+        border-radius: $borderRadius;
+        border: 2px solid $white;
+        transition: 0.3s ease all;
+        box-shadow: $boxShadow;
+        background-color: $light;
+
+        &__img {
+            width: auto;
+            height: auto;
+        }
+
+        &__text {
+            color: $dark;
+            font-size: 2rem;
+            letter-spacing: $letterSpacing;
+            font-weight: 900;
+            position: relative;
+
+            &__decoration {
+                color: rgba($dark, 0.9);
+                font-size: 1.5rem;
+                letter-spacing: $letterSpacing;
+                font-weight: 900;
+                position: relative;
+                text-decoration: none;
+                line-height: 1.2;
+                border-bottom: 2px $white solid;
+            }
+
+            @media only screen and (max-width: 576px) {
+                &__decoration {
+                    font-size: 1.2rem;
+                }
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        
+        img {
+            border: 2px solid $white;
+            border-radius: 50%;
+            height: 8rem;
+            margin-right: 5px;
+            margin-left: 5px;
+            object-fit: cover;
+            width: 8rem;
+        }
+
+        @media only screen and (max-width: 576px) {
+            img {
+                height: 7rem;
+                width: 7rem;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+
+        &__title {
+            margin: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+
+            &__right {
+                margin: 0.5rem 1rem;
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+            }
+        }
+
+        &__description {
+            color: rgba($dark, 0.9);
+            text-align: justify;
+            font-weight: 500;
+            font-size: 1.25rem;
+            padding: 1rem;
+            text-indent: 50px;
+        }
+    }
+}

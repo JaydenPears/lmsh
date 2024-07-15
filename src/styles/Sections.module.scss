@@ -1,0 +1,100 @@
+@import "./variables.scss";
+
+.h {
+    background: $bg;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    padding-top: $headerHeight;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+        padding-top: 15px;
+        font-size: 2.2rem;
+        font-weight: 800;
+        text-decoration: none;
+    }
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    .layout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: $bg;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    min-height: calc(100vh - #{$headerHeight} - 10px - 140px);
+    flex-direction: column;
+
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+
+    h1 {
+        padding-top: 15px;
+        font-size: 2.2rem;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    .selector {
+        margin-top: 30px;
+        width: 20rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-bottom: 30px;
+        z-index: 11;
+    }
+
+    .mySelect {
+        width: 100%;
+    }
+
+    .layout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sections {
+        width: 100%;
+    }
+
+    .groups {
+        width: 100%;
+    }
+}

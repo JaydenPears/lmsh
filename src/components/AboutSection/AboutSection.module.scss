@@ -1,0 +1,113 @@
+@import "./../../styles/variables.scss";
+
+.container {
+    background: $bg;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.message {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: $dark;
+        font-size: 2rem;
+        letter-spacing: $letterSpacing;
+        font-weight: 900;
+        position: relative;
+        margin-bottom: $spacing-xl;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card {
+        position: relative;
+        border-radius: $borderRadius;
+        border: 2px solid $white;
+        transition: 0.3s ease all;
+        box-shadow: $boxShadow;
+        background-color: $light;
+
+        &__img {
+            width: auto;
+            height: auto;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: $dark;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-align: left;
+        }
+
+        &__text {
+            color: $dark;
+            font-size: 2rem;
+            letter-spacing: $letterSpacing;
+            font-weight: 900;
+            position: relative;
+
+            &__decoration {
+                color: rgba($dark, 0.9);
+                font-size: 1.5rem;
+                letter-spacing: $letterSpacing;
+                font-weight: 900;
+                position: relative;
+                text-decoration: underline;
+                text-decoration-color: $primary;
+            }
+        }
+        
+        img {
+            height: 8rem;
+            margin-right: 30px;
+            object-fit: cover;
+            width: 8rem;
+        }
+
+        &__title {
+            margin: 0.5rem 1.5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__description {
+            color: rgba($dark, 0.9);
+            text-align: justify;
+            font-weight: 500;
+            font-size: 1.25rem;
+            padding: 1rem;
+            text-indent: 50px;
+        }
+    }
+
+    .cost {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 96%;
+    }
+}

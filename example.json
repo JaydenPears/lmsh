@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "name": "testsec",
+        "description": "testdesc",
+        "image": null,
+        "is_free": true,
+        "cost": "",
+        "is_active": true,
+        "personal": [],
+        "groups": [
+            {"id_group": "name_of_group"}
+        ]
+    },
+    {
+        "id": 2,
+        "name": "testsec2",
+        "description": "testdesc2",
+        "image": null,
+        "is_free": true,
+        "cost": "",
+        "is_active": true,
+        "personal": []
+    }
+]
