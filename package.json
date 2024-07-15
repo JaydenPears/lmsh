@@ -1,6 +1,6 @@
 {
-  "name": "sunrise",
-  "version": "0.1.0",
+  "name": "lmsh",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fullcalendar/core": "^6.1.9",
